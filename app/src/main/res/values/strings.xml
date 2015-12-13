@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AndroidTwitter</string>
+    <string name="twitter_consumer_key">CONSUMER_KEY_HERE</string>
+    <string name="twitter_consumer_secret">CONSUMER_SECRET_HERE</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="LightBlue">#2196F3</color>
+
+    <!-- Standard Button. Common buttons used through out the component -->
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="button_background">@color/LightBlue</color>
+    <color name="button_background_pressed">#005A8B</color>
+
+</resources>

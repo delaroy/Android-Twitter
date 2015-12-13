@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:overScrollMode="never">
+
+        <Button
+            android:id="@+id/twitter_logout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:background="@null"
+            android:text="Logout"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/tweet_layout"
+        style="@style/layoutstyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:background="#F3F3F3"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/username_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/tweet_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/username_tv"
+            android:background="@drawable/selector_option_button_bg"
+            android:text="Tweet"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/et"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tweet_btn"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittextstyle"
+            android:gravity="top|left"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/twitter_login_layout"
+        style="@style/layoutstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/prod_reg_social_border_btn">
+
+        <Button
+            android:id="@+id/twitter_login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dc_twitter"
+            android:text="Twitter"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>
